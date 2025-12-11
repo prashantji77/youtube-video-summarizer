@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Q&A",
+  "version": "1.0",
+  "description": "Ask questions about the current YouTube video and summarize the entire YouTube video.",
+  "permissions": ["tabs", "storage"],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://youtu.be/*",
+    "http://localhost:8000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Ask about this video"
+  }
+}

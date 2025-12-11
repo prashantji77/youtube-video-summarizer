@@ -1,0 +1,21 @@
+# Python virtual environment 
+venv/
+.venv/
+
+# Bytecode
+*.pyc
+__pycache__/
+
+# SQLite database 
+db.sqlite3
+
+# Media and static files 
+/media
+/static_root
+
+# Django specific
+/migrations
+
+# Environment variables and secrets
+.env
+secrets.json

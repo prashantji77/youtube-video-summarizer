@@ -1,0 +1,58 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Q&A</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>YouTube Q&A</h1>
+    <div class="theme-selector">
+      <button class="theme-btn" id="theme-btn">
+        <span class="icon">🌓</span>
+        <span id="theme-label">System</span>
+      </button>
+      <div class="theme-menu" id="theme-menu">
+        <div class="theme-option" data-theme="light">
+          <span>☀️</span>
+          <span>Light</span>
+        </div>
+        <div class="theme-option" data-theme="dark">
+          <span>🌙</span>
+          <span>Dark</span>
+        </div>
+        <div class="theme-option active" data-theme="system">
+          <span>🖥️</span>
+          <span>System</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="video-info" id="video-info">Loading video information...</div>
+
+    <form id="qa-form" method="post">
+      <div class="form-group">
+        <label for="question">Ask about this video</label>
+        <textarea 
+          id="question" 
+          rows="3" 
+          placeholder="Enter your question here..."
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn" id="submit-btn">
+        <span>Ask Question</span>
+      </button>
+    </form>
+
+    <div class="status" id="status"></div>
+    <div class="answer" id="answer"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
