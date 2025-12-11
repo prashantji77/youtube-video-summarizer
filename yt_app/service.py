@@ -11,7 +11,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-# ---------- GLOBAL OBJECTS (reused across requests) ----------
+
 embedding = HuggingFaceEmbeddings(model_name='sentence-transformers/all-MiniLM-L6-v2')
 
 llm = ChatOpenAI(
