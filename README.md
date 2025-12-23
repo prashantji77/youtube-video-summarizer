@@ -54,7 +54,7 @@ python manage.py migrate
 
 ## 🤖 OpenRouter API Setup
 
-We use OpenRouter to generate quiz questions.
+We use OpenRouter to generate responses.
 OpenRouter is free to start and provides access to models like gpt-3.5, llama-3, etc.
 
 Steps:
